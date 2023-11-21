@@ -1,4 +1,4 @@
-import { Box, Grid, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, HStack, Input, Text } from "@chakra-ui/react";
 function Form() {
   return (
     <Grid
@@ -25,13 +25,26 @@ function Form() {
         <Text fontSize='24px'>Learn More About FloQast.</Text>
       </Box>
 
-      <Box p='16px'>
+      <Box p='24px'>
         <Text fontWeight='semibold' fontSize='24px' textAlign='center'>
           Learn How FloQast Can{" "}
           <Box as='span' color='var(--primary)'>
             Improve Your Month-End
           </Box>
         </Text>
+
+        <Grid gridTemplateColumns='repeat(3,1fr)' mt='16px' gap='8px'>
+          <Input placeholder='First Name*' />
+          <Input placeholder='Email*' />
+          <Button
+            border='solid 2px #7bab3d'
+            color='white'
+            bgColor='var(--primary)'
+            fontSize='20px'
+          >
+            SCHEDULE NOW
+          </Button>
+        </Grid>
       </Box>
     </Grid>
   );
