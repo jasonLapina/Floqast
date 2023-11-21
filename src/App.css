@@ -1,5 +1,6 @@
 :root {
   --primary: #8bc540;
+  --maxW: 1330px;
 }
 
 body {

@@ -8,16 +8,14 @@ function App() {
   return (
     <Box
       bgImage={background}
-      minH='100vh'
       bgSize='cover'
       bgRepeat='no-repeat'
       bgPos='center'
       py='180px'
+      h='100vh'
     >
       <HeroText />
-      <Box as='main' maxW='1330px' mx='auto'>
-        <Form />
-      </Box>
+      <Form />
     </Box>
   );
 }

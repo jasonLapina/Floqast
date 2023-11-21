@@ -6,7 +6,7 @@ function HeroText() {
       bgGradient='linear(to right, rgba(255,255,255,1),rgba(255,255,255,0) 56% )'
       py='40px'
     >
-      <Box maxW='1330px' mx='auto'>
+      <Box maxW='var(--maxW)' mx='auto'>
         <Image display='inline-block' maxW='320px' src={floqast} />
         <Box
           fontStyle='italic'
