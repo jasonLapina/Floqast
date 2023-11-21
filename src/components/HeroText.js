@@ -3,10 +3,10 @@ import floqast from "../assets/FloQast.png";
 function HeroText() {
   return (
     <Box
-      bgGradient='linear(to right, rgba(255,255,255,1),rgba(255,255,255,0) 60% )'
+      bgGradient='linear(to right, rgba(255,255,255,1),rgba(255,255,255,0) 56% )'
       py='40px'
     >
-      <Box maxW='1330px' mx='auto'>
+      <Box color='#6d6e70' maxW='1330px' mx='auto'>
         <Image display='inline-block' maxW='320px' src={floqast} />
         <Box
           fontStyle='italic'
