@@ -1,6 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import background from "./assets/Background.jpg";
 import HeroText from "./components/HeroText";
+import Form from "./components/Form";
+import "./App.css";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       py='180px'
     >
       <HeroText />
-      <Box as='main' maxW='1330px' mx='auto'></Box>
+      <Box as='main' maxW='1330px' mx='auto'>
+        <Form />
+      </Box>
     </Box>
   );
 }

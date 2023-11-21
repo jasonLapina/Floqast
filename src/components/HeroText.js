@@ -6,7 +6,7 @@ function HeroText() {
       bgGradient='linear(to right, rgba(255,255,255,1),rgba(255,255,255,0) 56% )'
       py='40px'
     >
-      <Box color='#6d6e70' maxW='1330px' mx='auto'>
+      <Box maxW='1330px' mx='auto'>
         <Image display='inline-block' maxW='320px' src={floqast} />
         <Box
           fontStyle='italic'
@@ -18,7 +18,7 @@ function HeroText() {
             The
           </Text>
           <br />
-          <Text as='span' fontSize='48px' color='#85bf3a'>
+          <Text as='span' fontSize='48px' color='var(--primary)'>
             Fastest, Most Accurate
           </Text>
           <Text>Way to Close Your Books!</Text>
