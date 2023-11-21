@@ -11,8 +11,10 @@ function App() {
       bgSize='cover'
       bgRepeat='no-repeat'
       bgPos='center'
-      py='180px'
-      h='100vh'
+      pt='180px'
+      pb='56px'
+      minH='100vh'
+      px={{ xl: "0px", lg: "8px", base: "16px" }}
     >
       <HeroText />
       <Form />

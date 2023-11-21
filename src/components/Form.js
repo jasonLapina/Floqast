@@ -33,7 +33,12 @@ function Form() {
           </Box>
         </Text>
 
-        <Grid gridTemplateColumns='repeat(3,1fr)' mt='16px' gap='8px'>
+        <Grid
+          // gridTemplateColumns='repeat(3,1fr)'
+          gridTemplateColumns='repeat(auto-fit,minmax(240px,1fr))'
+          mt='16px'
+          gap='8px'
+        >
           <Input placeholder='First Name*' />
           <Input placeholder='Email*' />
           <Button
