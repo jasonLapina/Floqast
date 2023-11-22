@@ -16,9 +16,10 @@ function Form() {
           flexDir='column'
           justifyContent='center'
           textAlign='center'
-          py='24px'
-          pl='14px'
-          pr='24px'
+          p={{ base: "8px", md: "24px 24px 24px 14px" }}
+          // py='24px'
+          // pl='14px'
+          // pr='24px'
           bgColor='var(--primary)'
           clipPath={{
             base: "",
@@ -54,7 +55,7 @@ function Form() {
               color='white'
               bgColor='var(--primary)'
               fontSize='20px'
-              gridColumn={{ base: "1/-1", lg: "span 1" }}
+              gridColumn={{ base: "1/-1", xl: "span 1" }}
             >
               SCHEDULE NOW
             </Button>
