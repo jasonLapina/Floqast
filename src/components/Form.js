@@ -3,7 +3,7 @@ function Form() {
   return (
     <Grid
       maxW='var(--maxW)'
-      gridTemplateColumns='3fr 7fr'
+      gridTemplateColumns={{ sm: "1fr", md: "3fr 7fr" }}
       borderRadius='10px'
       overflow='hidden'
       bgColor='white'
@@ -17,7 +17,10 @@ function Form() {
         pl='14px'
         pr='24px'
         bgColor='var(--primary)'
-        clipPath='polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0 61%, 0% 0%)'
+        clipPath={{
+          base: "",
+          md: "polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0 61%, 0% 0%)",
+        }}
       >
         <Text fontWeight='semibold' fontSize='32px'>
           SCHEDULE A DEMO
@@ -46,6 +49,7 @@ function Form() {
             color='white'
             bgColor='var(--primary)'
             fontSize='20px'
+            gridColumn={{ base: "1/-1", lg: "span 1" }}
           >
             SCHEDULE NOW
           </Button>
