@@ -8,13 +8,13 @@ function App() {
   return (
     <Box
       bgImage={background}
-      bgSize='cover'
+      bgSize={{ base: "240%", md: "cover" }}
       bgRepeat='no-repeat'
-      bgPos='center'
-      pt='180px'
+      bgPos={{ base: "top", md: "center" }}
+      pt={{ base: "", sm: "180px" }}
       pb='56px'
       minH='100vh'
-      px={{ xl: "0px", lg: "8px", base: "16px" }}
+      // px={{ xl: "0px", lg: "8px", base: "16px" }}
     >
       <HeroText />
       <Form />
